@@ -1,0 +1,60 @@
+<html>
+    <title>Contact</title>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+        <script type='text/javascript' src='jquery.min.js'></script>
+        <script type='text/javascript' src='validation.js'></script>
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact">
+              <h3> Registration Form</h3>
+              <br>
+              <fieldset>
+                    <label for="contact_name">First Name </label>
+                    <input placeholder="Your first name" type="text" id="fname" autofocus autocomplete="off">
+                    <span class="error" id="err1">This field is required *</span>
+              </fieldset>
+              <fieldset>
+                    <label for="Last_Name">Last Name </label>
+                    <input placeholder="Your last name" type="text" id="lname" autocomplete="off" >
+                    <span class="error" id="err2">This field is required * </span>
+              </fieldset>
+              <fieldset>
+                    <label for="Pincode">Pincode</label>
+                    <input placeholder="Your Pincode" type="text" id="pcode" autocomplete="off">
+                    <span class="error" id="err3">This field is required * </span>
+                    <span class="error" id="err31">zipcode should only be 6 digits, zipcode should be numbers only </span>
+              </fieldset>
+              <fieldset>
+                    <label for="Email">Email</label>
+                    <input placeholder="Your Email" type="text" id="email" autocomplete="off" onblur="emailvalidate()">
+                    <span class="error" id="err4">This field is required * </span>
+                    <span class="error" id="err41">Email-id is invalid, For example, example@mail.com </span>
+              </fieldset>
+              <fieldset>
+                    <label for="username">Username</label>
+                    <input placeholder="Your Username" type="text" id="uname" autocomplete="off">
+                    <span class="error" id="err5">This field is required * </span>
+                    <span class="error" id="err51">Username is invalid, username should have alphanumeric, have minimum of 5 characters and a maximum of 10 characters </span>
+              </fieldset>
+              <fieldset>
+                    <label for="Email">Password</label>
+                    <input placeholder="Your Password" type="password" id="pswd" autocomplete="off">
+                    <span class="error" id="err6">This field is required * </span>
+                    <span class="error" id="err61">Password is invalid, at least one number, one lowercase and one uppercase letter, should have  of 8 characters</span>
+              </fieldset>
+              <fieldset>
+                    <label for="Email">Confirm password</label>
+                    <input placeholder="Confirm password" type="password" id="cpswd" autocomplete="off">
+                    <span class="error" id="err7">This field is required * </span>
+                    <span class="error" id="err71">Password did not match: Please try again... </span>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" >Register</button>
+              </fieldset>
+            </form>
+          </div>
+    </body>
+</html>
